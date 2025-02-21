@@ -1,24 +1,24 @@
 public class main {
     public static void main(String[] args) {
         // Precios originales
-        double precioCamiseta = 25.0;
-        double precioPantalon = 30.0;
+        float numPrecioCamiseta = 25.0f;
+        float numPrecioPantalon = 30.0f;
 
         // Descuentos
-        double descuentoGeneral = 0.15;
-        double descuentoAdicionalCamiseta = 0.05;
+        float numDescuentoGeneral = 0.15f;
+        float numDescuentoAdicionalCamiseta = 0.05f;
 
         // Calcular precios después del descuento general
-        double precioCamisetaDescuento = precioCamiseta * (1 - descuentoGeneral);
-        double precioPantalonDescuento = precioPantalon * (1 - descuentoGeneral);
+        float numPrecioCamisetaDescuento = numPrecioCamiseta * (1 - numDescuentoGeneral);
+        float numPrecioPantalonDescuento = numPrecioPantalon * (1 - numDescuentoGeneral);
 
         // Calcular precio de la segunda camiseta con el descuento adicional
-        double precioSegundaCamisetaDescuento = precioCamisetaDescuento * (1 - descuentoAdicionalCamiseta);
+        float numPrecioSegundaCamisetaDescuento = numPrecioCamisetaDescuento * (1 - numDescuentoAdicionalCamiseta);
 
         // Calcular el precio total
-        double precioTotal = precioCamisetaDescuento + precioPantalonDescuento + precioSegundaCamisetaDescuento;
+        float numPrecioTotal = numPrecioCamisetaDescuento + numPrecioPantalonDescuento + numPrecioSegundaCamisetaDescuento;
 
         // Imprimir el resultado
-        System.out.println("El precio total de ambas prendas después de aplicar los descuentos es: $" + precioTotal);
+        System.out.println("El precio total de ambas prendas después de aplicar los descuentos es: $" + numPrecioTotal);
     }
 }
